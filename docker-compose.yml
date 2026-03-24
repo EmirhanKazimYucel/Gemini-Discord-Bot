@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  nexus-bot:
+    build: .
+    container_name: nexus_ai_container
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
